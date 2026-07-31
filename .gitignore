@@ -19,3 +19,6 @@ Content/obj/
 # Test results
 [Tt]est[Rr]esults/
 *.trx
+
+# Local docs (submitted separately, not tracked in the repo)
+docs/
