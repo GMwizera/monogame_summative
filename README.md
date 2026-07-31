@@ -21,20 +21,36 @@ shield, rapid fire, and speed boost. Avoid letting enemies touch you.
 
 ## How to run
 
-Requires the [.NET SDK](https://dotnet.microsoft.com/download) **9.0 or later**.
-The game generates all its graphics at runtime, so there is no content pipeline to
-build.
+**Prerequisite:** the [.NET SDK](https://dotnet.microsoft.com/download) **9.0 or
+later**. Nothing else is needed. The game generates all its graphics at runtime, so
+there is no MonoGame content pipeline to install.
+
+**1. Clone the repository and enter the folder**
 
 ```bash
-# run the game
-dotnet run --project src/ArenaDefender.Desktop
+git clone https://github.com/GMwizera/monogame_summative.git
+cd monogame_summative
+```
 
-# run the unit tests
+**2. Run the game**
+
+```bash
+dotnet run --project src/ArenaDefender.Desktop
+```
+
+**3. Run the unit tests (optional)**
+
+```bash
 dotnet test
 ```
 
-> The projects target **.NET 9**. If your machine only has a newer runtime (e.g.
-> .NET 10) installed, prefix the commands with `DOTNET_ROLL_FORWARD=Major`.
+> The projects target **.NET 9**. If your machine only has a newer runtime (for
+> example .NET 10) installed, prefix the commands in steps 2 and 3 with
+> `DOTNET_ROLL_FORWARD=Major`, like this:
+>
+> ```bash
+> DOTNET_ROLL_FORWARD=Major dotnet run --project src/ArenaDefender.Desktop
+> ```
 
 ## Project structure
 
